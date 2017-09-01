@@ -1,0 +1,33 @@
+.desktop-nav {
+	background: pink;
+}
+
+.mobile-nav {
+	background: grey;
+}
+
+.desktop-nav {
+	background: pink;
+	display: none;
+}
+
+.mobile-nav {
+	background: grey;
+	display: flex;
+	flex-direction: column;
+}
+
+
+/* Media Queries */
+
+@media screen and (min-width: 690px) {
+
+	.desktop-nav {
+		display: flex;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+	
+}
