@@ -1,20 +1,22 @@
-.desktop-nav {
-	background: pink;
-}
-
-.mobile-nav {
-	background: grey;
-}
-
-.desktop-nav {
-	background: pink;
+.desktop-nav, .desktop-nav ul {
 	display: none;
 }
 
 .mobile-nav {
-	background: grey;
 	display: flex;
 	flex-direction: column;
+	text-align: right;
+}
+
+.mobile-nav-closed {
+	display: none;
+}
+
+.hamburger-menu {
+	margin: 0 0 0 auto;
+	background: red;
+	height: 50px;
+	width: 50px;
 }
 
 
@@ -22,11 +24,11 @@
 
 @media screen and (min-width: 690px) {
 
-	.desktop-nav {
+	.desktop-nav, .desktop-nav ul {
 		display: flex;
 	}
 
-	.mobile-nav {
+	.hamburger-menu, .mobile-nav {
 		display: none;
 	}
 	

@@ -1,3 +1,93 @@
+// Cabin
+
+@font-face {
+    font-family: 'Cabin-Bold';
+    src: url(../fonts/Cabin/Cabin-Bold.ttf);
+}
+@font-face {
+    font-family: 'Cabin-BoldItalic';
+    src: url(../fonts/Cabin/Cabin-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'Cabin-Italic';
+    src: url(../fonts/Cabin/Cabin-Italic.ttf);
+}
+@font-face {
+    font-family: 'Cabin-Medium';
+    src: url(../fonts/Cabin/Cabin-Medium.ttf);
+}
+@font-face {
+    font-family: 'Cabin-MediumItalic';
+    src: url(../fonts/Cabin/Cabin-MediumItalic.ttf);
+}
+@font-face {
+    font-family: 'Cabin-Regular';
+    src: url(../fonts/Cabin/Cabin-Regular.ttf);
+}
+@font-face {
+    font-family: 'Cabin-SemiBold';
+    src: url(../fonts/Cabin/Cabin-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Cabin-SemiBoldItalic';
+    src: url(../fonts/Cabin/Cabin-SemiBoldItalic.ttf);
+}
+
+// Ubuntu
+
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(../fonts/Ubuntu/Ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu-BoldItalic';
+    src: url(../fonts/Ubuntu/Ubuntu-BoldItalic.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu-Italic';
+    src: url(../fonts/Ubuntu/Ubuntu-Italic.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url(../fonts/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu-LightItalic';
+    src: url(../fonts/Ubuntu/Ubuntu-LightItalic.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url(../fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu-MediumItalic';
+    src: url(../fonts/Ubuntu/Ubuntu-MediumItalic.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+
+// Styles
+
 h1 {
-	color: black;
+    font-family: 'Cabin-Bold', serif;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    margin: 0 0 15px 0;
+}
+
+p {
+    font-family: 'Ubuntu-Regular', serif;
+    font-size: 1em;
+    line-height: 1.3em;
+    margin: 0 0 20px 0;
+}
+
+a {
+    font-family: 'Ubuntu-Regular', serif;
+    font-size: 1em;
+    line-height: 1.3em;
+    margin: 0 0 20px 0;
 }

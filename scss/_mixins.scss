@@ -1,0 +1,22 @@
+/* Black Button */
+
+@mixin black-button-small {
+    background: transparent url("/img/buttons/small/arrow-right-black-no-border.svg") no-repeat right center;
+    pointer-events: auto;
+    overflow: auto;
+    padding: 10px 70px 10px 20px;
+    float: left;
+    margin-top: 20px;
+    border: 1px solid #000;
+    align-items: center;
+    height: 35px;
+    p, a, input[value="Send"] {
+        font-size: 13px;
+        color: #000;
+        text-transform: uppercase;
+        line-height: 34px;
+        float: left;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+}
