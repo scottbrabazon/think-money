@@ -1,45 +1,66 @@
 //Rotate
 
 .rotate1 {
-   transform-origin: 160px 57px;
-   animation: rotate 2s linear backwards;
-   animation-iteration-count: infinite;
+  transform-origin: 160px 57px;
+  animation: rotate 2s linear backwards;
+  animation-iteration-count: infinite;
+  -ms-animation: rotate linear 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 160px 57px;
 }
 
 .rotate2 {
-   transform-origin: 98px 17px;
-   animation: rotate 2s linear backwards;
-   animation-iteration-count: infinite;
+  transform-origin: 98px 17px;
+  animation: rotate 2s linear backwards;
+  animation-iteration-count: infinite;
+  -ms-animation: rotate linear 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 98px 17px;
 }
 
 .rotate3 {
-   transform-origin: 22px 106px;
-   animation: rotate 2s linear backwards;
-   animation-iteration-count: infinite;
+  transform-origin: 22px 106px;
+  animation: rotate 2s linear backwards;
+  animation-iteration-count: infinite;
+  -ms-animation: rotate linear 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 22px 106px;
 }
 
 .rotate4 {
-   transform-origin: 148px 141px;
-   animation: rotate 2s linear backwards;
-   animation-iteration-count: infinite;
+  transform-origin: 148px 141px;
+  animation: rotate 2s linear backwards;
+  animation-iteration-count: infinite;
+  -ms-animation: rotate linear 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 148px 141px;
 }
 
 .rotate5 {
-   transform-origin: 98px 139px;
-   animation: rotate 2s linear backwards;
-   animation-iteration-count: infinite;
+  transform-origin: 98px 139px;
+  animation: rotate 2s linear backwards;
+  animation-iteration-count: infinite;
+  -ms-animation: rotate linear 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 98px 139px;
 }
 
 .rotate6 {
-   transform-origin: 37px 86px;
-   animation: rotate 2s linear backwards;
-   animation-iteration-count: infinite;
+  transform-origin: 37px 86px;
+  animation: rotate 2s linear backwards;
+  animation-iteration-count: infinite;
+  -ms-animation: rotate linear 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 37px 86px;
 }
 
 .rotate7 {
-   transform-origin: 68px 23px;
-   animation: rotate 2s linear backwards;
-   animation-iteration-count: infinite;
+  transform-origin: 68px 23px;
+  animation: rotate 2s linear backwards;
+  animation-iteration-count: infinite;
+  -ms-animation: rotate linear 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 68px 23px;
 }
 
 @keyframes rotate {
@@ -54,15 +75,15 @@
   }
 }
 
-@-moz-keyframes rotate {
+@-ms-keyframes rotate {
   0% {
-    -moz-transform:  rotate(0deg) ;
+    -ms-transform:  rotate(0deg) ;
   }
   50% {
-    -moz-transform:  rotate(180deg) ;
+    -ms-transform:  rotate(180deg) ;
   }
   100% {
-    -moz-transform:  rotate(360deg) ;
+    -ms-transform:  rotate(360deg) ;
   }
 }
 
@@ -101,114 +122,3 @@
     -ms-transform: rotate(360deg) ;
   }
 }
-
-// Pulse
-
-.pulse1{
-  animation: pulse ease-out 3s;
-  animation-iteration-count: infinite;
-  transform-origin: 50% 50%;
-  -webkit-animation: pulse ease-out 3s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-transform-origin: 50% 50%;
-  -moz-animation: pulse ease-out 3s;
-  -moz-animation-iteration-count: infinite;
-  -moz-transform-origin: 68px 23px;
-  -o-animation: pulse ease-out 3s;
-  -o-animation-iteration-count: infinite;
-  -o-transform-origin: 50% 50%;
-  -ms-animation: pulse ease-out 3s;
-  -ms-animation-iteration-count: infinite;
-  -ms-transform-origin: 50% 50%;
-}
-
-@keyframes pulse{
-  0% {
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-  42% {
-    transform:  scaleX(2.00) scaleY(2.00) ;
-  }
-  50% {
-    transform:  scaleX(0.50) scaleY(0.50) ;
-  }
-  57% {
-    transform:  scaleX(2.00) scaleY(2.00) ;
-  }
-  100% {
-    transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-}
-
-@-moz-keyframes ButtonPress{
-  0% {
-    -moz-transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-  42% {
-    -moz-transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-  50% {
-    -moz-transform:  scaleX(0.50) scaleY(0.50) ;
-  }
-  57% {
-    -moz-transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-  100% {
-    -moz-transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-}
-
-@-webkit-keyframes ButtonPress {
-  0% {
-    -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-  42% {
-    -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
-  }
-  50% {
-    -webkit-transform: scaleX(0.50) scaleY(0.50) ;
-  }
-  57% {
-    -webkit-transform: scaleX(1.00) scaleY(1.00) ;
-  }
-  100% {
-    -webkit-transform: scaleX(1.00) scaleY(1.00) ;
-  }
-}
-
-@-o-keyframes ButtonPress {
-  0% {
-    -o-transform: scaleX(1.00) scaleY(1.00) ;
-  }
-  42% {
-    -o-transform: scaleX(1.00) scaleY(1.00) ;
-  }
-  50% {
-    -o-transform: scaleX(0.50) scaleY(0.50) ;
-  }
-  57% {
-    -o-transform: scaleX(1.00) scaleY(1.00) ;
-  }
-  100% {
-    -o-transform: scaleX(1.00) scaleY(1.00) ;
-  }
-}
-
-@-ms-keyframes ButtonPress {
-  0% {
-    -ms-transform: scaleX(1.00) scaleY(1.00) ;
-  }
-  42% {
-    -ms-transform: scaleX(1.00) scaleY(1.00) ;
-  }
-  50% {
-    -ms-transform: scaleX(0.50) scaleY(0.50) ;
-  }
-  57% {
-    -ms-transform: scaleX(1.00) scaleY(1.00) ;
-  }
-  100% {
-    -ms-transform: scaleX(1.00) scaleY(1.00) ;
-  }
-}
-
