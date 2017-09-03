@@ -66,7 +66,7 @@ function submitForm() {
     allowSubmit = false;
   }
   if ( allowSubmit == true ) {
-    const userData = { 
+    let userData = { 
     "First Name": firstnameInput.value, 
     "Phone Number": phoneInput.value, 
     "Email Address": emailInput.value 

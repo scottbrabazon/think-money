@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 form, .output {
   width: 100%;
 }
@@ -14,7 +16,7 @@ input {
 input[type="text"],
 input[type="password"] {
   background: #fff;
-  border: 1px solid #e5e5e5;
+  border: 1px solid $green;
   padding: 0.8em 0.5em;
   border-radius: 5px;
 }
@@ -29,12 +31,5 @@ span {
   padding-top: 10px;
 }
 input[type="submit"] {
-  background: #2F558E;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  line-height: 1.6em;
-  outline: none;
-  padding: .8em 0;
+  width: auto;
 }

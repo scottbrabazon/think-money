@@ -1,6 +1,6 @@
-/* Black Button */
+/* Button */
 
-@mixin black-button-small {
+@mixin button {
     background: transparent url("/img/buttons/small/arrow-right-black-no-border.svg") no-repeat right center;
     pointer-events: auto;
     overflow: auto;

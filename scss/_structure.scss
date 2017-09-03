@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 .main-container {
 	max-width: 1175px;
 	margin: 0 auto;
@@ -5,15 +7,22 @@
 }
 
 .full-column {
-	width: 100%;
+	width: 96%;
+	padding: 2%;
 }
 
 .half-column {
-	width: 100%;
+	width: 96%;
+	padding: 2%;
 }
 
 .third-column {
-	width: 100%;
+	width: 96%;
+	padding: 2%;
+	text-align: center;
+	p {
+		margin: 0;
+	}
 }
 
 #navigation-row {
@@ -22,8 +31,13 @@
 }
 
 #header-row {
+	background-color: $light-grey;
+}
+
+.header-content {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
+	svg {max-height: 300px;}
 }
 
 #always-a-way-row {
@@ -34,14 +48,15 @@
 #form-row {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 1000px;
 }
 
 
 /* Media Queries */
 
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 500px) {
 
-	#header-row {
+	.header-content {
 		flex-direction: row;
 	}
 

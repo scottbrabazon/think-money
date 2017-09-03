@@ -1,7 +1,6 @@
 {
   "name": "think-money",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +11,17 @@
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.7.0",
     "gulp-sass": "^3.1.0"
-  }
+  },
+  "dependencies": {
+    "gulp-install": "^1.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottbrabazon/think-money.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scottbrabazon/think-money/issues"
+  },
+  "homepage": "https://github.com/scottbrabazon/think-money#readme",
+  "description": ""
 }

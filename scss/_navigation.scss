@@ -1,28 +1,77 @@
+.simple-debt-advice-logo {
+	max-width: 305px;
+	width: 50%;
+	flex-grow: 2;
+	max-height: 68px;
+}
+
+.phone-icon {
+	height: 50px;
+	width: 50px;
+	max-width: 50px;
+}
+
+.active {
+	border-bottom: 5px solid $green;
+}
+
 .desktop-nav, .desktop-nav ul {
 	display: none;
 }
 
+.desktop-nav {
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.nav-links-desktop li {
+	margin-left: 2em;
+}
+
+.phone-number {
+	display: flex;
+	 p {font-family: 'Cabin-Bold', serif;}
+}
+
 .mobile-nav {
 	display: flex;
-	flex-direction: column;
-	text-align: right;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
 }
 
 .mobile-nav-closed {
 	display: none;
 }
 
-.hamburger-menu {
+.mobile-nav-rhs {
+	display: flex;
+}
+
+.hamburger-button {
 	margin: 0 0 0 auto;
-	background: red;
 	height: 50px;
 	width: 50px;
+}
+
+.mobile-menu {
+	text-align: right;
+	width: auto;
+}
+
+.nav-links-mobile {
+	margin: 0;
 }
 
 
 /* Media Queries */
 
-@media screen and (min-width: 690px) {
+@media screen and (min-width: 1020px) {
+
+	.phone-icon {
+		margin-top: -15px;
+	}
 
 	.desktop-nav, .desktop-nav ul {
 		display: flex;

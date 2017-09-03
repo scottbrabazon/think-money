@@ -1,20 +1,15 @@
+//Open and close Mobile Navigation
 $(document).ready(function(){
-    $(".hamburger-menu").click(function(){
+    $(".hamburger-button").click(function(){
     	$(".nav-links-mobile").toggleClass("mobile-nav-closed");
     });
+});
 
-  //   $(".menu-overlay a").click(function( event ){
-  //       $(".menu-overlay").toggle();
-  //       console.log(this.hash);
-  //       $("html, body").animate({
-		// 	scrollTop: $(this.hash).offset().top
-		// }, 1000);
-  //       $(".menu-toggle").removeClass("open");
-  //       event.preventDefault();
-  //       $(".our-work-toggle").removeClass("open");
-  //       event.preventDefault();
-  //       $(".contact-us-toggle").removeClass("open");
-  //       event.preventDefault();
-  //   });
+//Smooth Scroll to form
+$(document).on('click', 'a', function(event){
+    event.preventDefault();
 
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
 });

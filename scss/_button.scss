@@ -1,0 +1,15 @@
+@import "_variables.scss";
+
+.button {
+    background: $green url("../img/chevron.svg") no-repeat right center;
+    overflow: auto;
+    padding: 0.8em 3.5em 0.8em 0.8em;
+    float: left;
+    margin-top: 20px;
+    border-radius: 1.5em;
+    border: none;
+    color: #fff;
+    font-family: 'Cabin-Bold', serif;
+    font-size: 1.5em;
+    cursor: pointer;
+}

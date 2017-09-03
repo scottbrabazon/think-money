@@ -1,3 +1,5 @@
+@import "_variables.scss";
+
 // Cabin
 
 @font-face {
@@ -73,9 +75,18 @@
 
 h1 {
     font-family: 'Cabin-Bold', serif;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.2em;
     margin: 0 0 15px 0;
+    color: $grey;
+}
+
+h2 {
+    font-family: 'Cabin-Bold', serif;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    margin: 0 0 15px 0;
+    color: $green;
 }
 
 p {
@@ -83,6 +94,7 @@ p {
     font-size: 1em;
     line-height: 1.3em;
     margin: 0 0 20px 0;
+    color: $grey;
 }
 
 a {
@@ -90,4 +102,6 @@ a {
     font-size: 1em;
     line-height: 1.3em;
     margin: 0 0 20px 0;
+    text-decoration: none;
+    color: $grey;
 }
