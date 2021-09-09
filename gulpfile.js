@@ -1,26 +1,22 @@
-let gulp = require('gulp');
-let sass = require('gulp-sass');
-let cleanCSS = require('gulp-clean-css');
-// let minifyjs = require('gulp-js-minify');
+const gulp = require('gulp');
+const sass = require('gulp-sass')(require('sass'));
+const cleanCSS = require('gulp-clean-css');
+const sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('sass',function(){
-  return gulp.src(['scss/style.scss'])
-    .pipe(sass().on('error',sass.logError))
-    .pipe(gulp.dest('css'))
-});
-
-gulp.task('watch-sass', function(){
-	gulp.watch('scss/*.scss', ['sass']);
-});
-
-gulp.task('minify-css', () => {
-  return gulp.src('css/*.css')
-    .pipe(cleanCSS({compatibility: 'ie8'}))
+function buildStyles() {
+  return gulp.src('scss/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(cleanCSS())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('css'));
-});
+};
 
-// gulp.task('minify-js', function(){
-  // gulp.src('jsdist/a.js')
-    // .pipe(minifyjs())
-    // .pipe(gulp.dest('./dist/'));
-// });
+exports.buildStyles = buildStyles;
+
+exports.watch = function () {
+  gulp.watch('scss/*.scss', gulp.series('buildStyles'));
+};
+
+
+
